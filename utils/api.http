@@ -1,0 +1,28 @@
+GET http://localhost:3001/books
+
+###
+get http://localhost:3001/books/1
+
+###
+
+post http://localhost:3001/books
+content-type: application/json
+
+{
+    "Title" : "El Conde de Monte-Cristo",
+    "Autor" : "Alejandro Dumas",
+    "Decription" : "Drama"
+}
+
+###
+DELETE http://localhost:3001/books/2 HTTP/1.1
+
+###
+PUT http://localhost:3001/books/1 HTTP/1.1
+content-type: application/json
+
+{
+    "Title" : "El Conde de Monte-Cristo",
+    "Autor" : "Alejandro Dumas",
+    "Decription" : "COMEDIA"
+}
